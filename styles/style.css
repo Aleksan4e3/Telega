@@ -112,7 +112,16 @@ html{
     overflow-y: scroll;
 }
 .user-message{
+    display: flex;
     /* text-align: justify; */
+}
+.message-time{
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: right;
 }
 .my-message{
     align-self: flex-end;
@@ -177,4 +186,7 @@ i.fa-bullhorn{
 img{
     width: 50px;
     border-radius: 25px;
+}
+.las{
+    color:green;
 }
