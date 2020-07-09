@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    min-height: 350px;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    min-height: 400px;
+}
+#contacts{
+    display: flex;
+    flex-direction: column;
+    flex:1 1 auto;
+    min-width: 250px;
+    max-width: 350px;
+    border-right: 1px solid gray;
+    /* height: 100%; */
+}
+#search{
+    height: 50px;
+    padding: 0 15px;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+}
+#groups{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+.group-item{
+    height: 60px;
+    flex: 0 0 auto;
+    display: flex;
+    padding: 0 10px;
+}
+#chat{
+    flex:4 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 370px;
+    /* height: 100%; */
+}
+#header{
+    height: 50px;
+    padding: 0 15px;
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+#messages{
+    background-color: aqua;
+    flex: 1 1 auto;
+}
+#writeMessage{
+    height: 50px;
+    padding: 10px 15px;
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-between;
+}
+i{
+    padding: 0 10px;
+    color: gray;
+    cursor: pointer;
+}
+.bold{
+    font-weight: bold;
+}
+.input{
+    flex: 1 1 auto;
+}
+#writeMessage input{
+    height: 30px;
+    font-size: 16px;
+    border: none;
+}
+#writeMessage input:focus{
+    outline: none;
+}
+#search input{
+    padding-left: 15px;
+    background-color: #eee;
+    height: 30px;
+    width: 170px;
+    font-size: 16px;
+    border: none;
+}
+#search input:focus{
+    outline: 2px solid cornflowerblue;
+}
+img{
+    width: 60px;
+    border-radius: 30px;
+}
