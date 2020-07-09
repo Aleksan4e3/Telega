@@ -32,7 +32,7 @@ html{
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .group-item{
     height: 60px;
@@ -99,7 +99,7 @@ html{
 #header{
     height: 50px;
     padding: 0 15px;
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;  
@@ -107,6 +107,28 @@ html{
 #messages{
     background-image: url(../images/chat.jpg);
     flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.user-message{
+    /* text-align: justify; */
+}
+.my-message{
+    align-self: flex-end;
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e5ffd4;
+    margin: 2px;
+}
+.your-message{
+    align-self: flex-start;
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e9ecf7;
+    margin: 2px;
 }
 #writeMessage{
     height: 50px;
