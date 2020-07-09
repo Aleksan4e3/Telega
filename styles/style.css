@@ -17,7 +17,7 @@ html{
     flex-direction: column;
     flex:1 1 auto;
     min-width: 250px;
-    max-width: 350px;
+    /* max-width: 350px; */
     border-right: 1px solid gray;
     /* height: 100%; */
 }
@@ -38,7 +38,51 @@ html{
     height: 60px;
     flex: 0 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 10px;
+}
+.group-item:hover{
+    background-color: #eee;
+}
+.item-message{
+    padding: 10px;
+    flex: 1 1 auto;
+    width: 200px;
+
+}
+.item-message-name, .item-message-message{
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    height: 25px;
+    padding-top: 5px;
+}
+.item-message-message span{
+    color: #0037ff9e;
+}
+.item-message-name{
+    font-weight: bold;
+}
+.item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 10px;
+}
+.item-info-time, .item-info-unread{
+    height: 25px;
+    text-align: right;
+}
+.item-info-unread:not(.read){
+    color: white;
+    background-color: #808080ab;
+    text-align: center;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
 }
 #chat{
     flex:4 1 auto;
@@ -57,7 +101,7 @@ html{
     justify-content: space-between;  
 }
 #messages{
-    background-color: aqua;
+    background-color: #00b8ff12;
     flex: 1 1 auto;
 }
 #writeMessage{
@@ -71,6 +115,12 @@ i{
     padding: 0 10px;
     color: gray;
     cursor: pointer;
+}
+i.fa-check-circle{
+    color: #1892d1;
+}
+i.fa-users{
+    color: black;
 }
 .bold{
     font-weight: bold;
@@ -90,7 +140,7 @@ i{
     padding-left: 15px;
     background-color: #eee;
     height: 30px;
-    width: 170px;
+    width: 100%;
     font-size: 16px;
     border: none;
 }
@@ -98,6 +148,6 @@ i{
     outline: 2px solid cornflowerblue;
 }
 img{
-    width: 60px;
-    border-radius: 30px;
+    width: 50px;
+    border-radius: 25px;
 }
