@@ -67,7 +67,7 @@ html{
 .item-info{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-end;
     padding: 10px;
 }
@@ -75,14 +75,18 @@ html{
     height: 25px;
     text-align: right;
 }
-.item-info-unread:not(.read){
-    color: white;
-    background-color: #808080ab;
+.item-info-unread{
+    /* color: white;
+    background-color: #808080ab; */
     text-align: center;
     border-radius: 10px;
     width: 20px;
     height: 20px;
     margin-right: 0px;
+}
+.item-info-unread:not(.read){
+    color: white;
+    background-color: #808080ab;
 }
 #chat{
     flex:4 1 auto;
@@ -101,7 +105,7 @@ html{
     justify-content: space-between;  
 }
 #messages{
-    background-color: #00b8ff12;
+    background-image: url(../images/chat.jpg);
     flex: 1 1 auto;
 }
 #writeMessage{
@@ -119,7 +123,8 @@ i{
 i.fa-check-circle{
     color: #1892d1;
 }
-i.fa-users{
+i.fa-users,
+i.fa-bullhorn{
     color: black;
 }
 .bold{
