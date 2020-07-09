@@ -111,9 +111,12 @@ html{
     flex-direction: column;
     overflow-y: scroll;
 }
-.user-message{
+.wrap{
     display: flex;
-    /* text-align: justify; */
+}
+.your-message-avatar{
+    align-self: flex-end;
+    padding: 0 5px;
 }
 .message-time{
     color: green;
@@ -183,9 +186,13 @@ i.fa-bullhorn{
 #search input:focus{
     outline: 2px solid cornflowerblue;
 }
-img{
+.round{
     width: 50px;
     border-radius: 25px;
+}
+.your-message-avatar img{
+    width: 30px;
+    border-radius: 15px; 
 }
 .las{
     color:green;
