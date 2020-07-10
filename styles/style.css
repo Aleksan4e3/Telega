@@ -17,9 +17,7 @@ html{
     flex-direction: column;
     flex:1 1 auto;
     min-width: 250px;
-    /* max-width: 350px; */
     border-right: 1px solid gray;
-    /* height: 100%; */
 }
 #search{
     height: 50px;
@@ -80,8 +78,6 @@ html{
     text-align: right;
 }
 .item-info-unread{
-    /* color: white;
-    background-color: #808080ab; */
     text-align: center;
     border-radius: 10px;
     width: 20px;
@@ -98,7 +94,6 @@ html{
     flex-direction: column;
     justify-content: space-between;
     min-width: 370px;
-    /* height: 100%; */
 }
 #header{
     height: 50px;
@@ -107,6 +102,9 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;  
+}
+#group-info .userNumber{
+    color: #949494;
 }
 #messages{
     background-image: url(../images/chat.jpg);
@@ -196,6 +194,7 @@ i.fa-bullhorn{
     width: 100%;
     font-size: 16px;
     border: none;
+    border-radius: 5px;
 }
 #search input:focus{
     outline: 2px solid cornflowerblue;
