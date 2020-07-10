@@ -219,3 +219,9 @@ i.fa-bullhorn{
     border-radius: 15px;
     background-color: #8fa75d;
 }
+
+@media screen and (max-width: 768px){
+    #chat{
+        display: none;
+    }
+}
