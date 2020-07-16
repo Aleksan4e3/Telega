@@ -139,8 +139,24 @@ html{
     padding-top: 10px;
     float: right;
 }
-.message-text img{
+.your-message .message-text img{
     width: 100%;
+}
+.message-link-text{
+    padding-left: 10px;
+    margin-top: 10px;
+    border-left: 2px solid #419fd9;
+}
+.message-link-text .name-link{
+    color: #419fd9;
+}
+.message-link-text .name-chapter{
+    font-weight: bold;
+}
+.message-link-text img{
+    width: 60px;
+    float: right;
+    margin-left: 30px;
 }
 .my-message{
     align-self: flex-end;
@@ -238,6 +254,15 @@ i.fa-bullhorn{
     padding: 4px 10px;
     border-radius: 15px;
     background-color: #92a87a;
+}
+a:visited{
+    color: #419fd9;   
+}
+a:hover{
+    text-decoration: underline; 
+}
+a{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px){
