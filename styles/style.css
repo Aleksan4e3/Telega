@@ -78,6 +78,9 @@ html{
 .item-message-name{
     font-weight: bold;
 }
+.item-message-name:not(.selected-item){
+    color: #383838;
+}
 .item-info{
     display: flex;
     flex-direction: column;
@@ -209,6 +212,7 @@ i.fa-bullhorn{
 }
 .bold{
     font-weight: bold;
+    color: #383838;
 }
 .input{
     flex: 1 1 auto;
