@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -77,6 +78,9 @@ html{
 .item-message-name{
     font-weight: bold;
 }
+.item-message-name:not(.selected-item){
+    color: #383838;
+}
 .item-info{
     display: flex;
     flex-direction: column;
@@ -139,6 +143,25 @@ html{
     padding-top: 10px;
     float: right;
 }
+.your-message .message-text img{
+    width: 100%;
+}
+.message-link-text{
+    padding-left: 10px;
+    margin-top: 10px;
+    border-left: 2px solid #419fd9;
+}
+.message-link-text .name-link{
+    color: #419fd9;
+}
+.message-link-text .name-chapter{
+    font-weight: bold;
+}
+.message-link-text img{
+    width: 60px;
+    float: right;
+    margin-left: 30px;
+}
 .my-message{
     align-self: flex-end;
     max-width: 350px;
@@ -189,6 +212,7 @@ i.fa-bullhorn{
 }
 .bold{
     font-weight: bold;
+    color: #383838;
 }
 .input{
     flex: 1 1 auto;
@@ -235,6 +259,15 @@ i.fa-bullhorn{
     padding: 4px 10px;
     border-radius: 15px;
     background-color: #92a87a;
+}
+a:visited{
+    color: #419fd9;   
+}
+a:hover{
+    text-decoration: underline; 
+}
+a{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px){

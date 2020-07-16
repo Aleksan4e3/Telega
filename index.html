@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <script src="https://use.fontawesome.com/2e3f8aa01d.js"></script>
@@ -68,7 +69,7 @@
                 <div class="group-item" id="selected-group-item">
                     <div class="item-image"><img src="./images/ais.jpg" class="round" /></div>
                     <div class="item-message">
-                        <div class="item-message-name">
+                        <div class="item-message-name selected-item">
                             <i class="fa fa-users" aria-hidden="true"></i>
                             Ais
                         </div>
@@ -282,10 +283,17 @@
                     </div>
                 </div>
                 <div class='user-message my-message'>
-                    <div class='message-text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                        mollitia aspernatur id expedita maxime. Nihil dolor ducimus vero aliquam deleniti. Amet eius
-                        voluptate, dolores porro corrupti repudiandae officiis officia magni!
+                    <div class='message-text message-link'>
+                        Actual info:<br />
+                        <a href="https://docs.microsoft.com/ru-ru/">https://docs.microsoft.com/ru-ru/</a>
+                        <div class="message-link-text">
+                            <span class="name-link">Docs</span><br />
+                            <a href="https://docs.microsoft.com/ru-ru/">
+                                <img src="./images/microsoft.png" />
+                            </a>
+                            <span class="name-chapter">Техническая документация, материалы по API и примеры.</span>
+                            Ознакомьтесь с актуальной документацией Майкрософт для пользователей, разработчиков
+                        </div>
                         <span class="message-time">
                             14:02
                             <i class="las la-check-double fa-lg"></i>
@@ -379,8 +387,7 @@
                     <div class='user-message your-message'>
                         <div class="nickName leo">Leo Clark</div>
                         <div class='message-text'>
-                            Try to understand them, because the English that we speak today
-                            is based on what our great, great, great, great grandparents spoke before!
+                            <img src="./images/ctrls.jpg">
                             <span class="message-time">14:10</span>
                         </div>
                     </div>
