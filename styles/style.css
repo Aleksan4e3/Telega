@@ -139,6 +139,9 @@ html{
     padding-top: 10px;
     float: right;
 }
+.message-text img{
+    width: 100%;
+}
 .my-message{
     align-self: flex-end;
     max-width: 350px;
